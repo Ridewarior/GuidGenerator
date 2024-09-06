@@ -6,9 +6,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<PackAsTool>true</PackAsTool>
+  <PackageId>SimpleGuidGenerator</PackageId>
+  <PackageVersion>1.0.1</PackageVersion>
 	<ToolCommandName>genguid</ToolCommandName>
 	<PackageOutputPath>./nupkg</PackageOutputPath>
+  <Authors>Antonio Magallon</Authors>
+  <RepositoryUrl>https://github.com/Ridewarior/GuidGenerator</RepositoryUrl>
+  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  <PackageTags>guid, generator, simple, tool</PackageTags>
+  <Description>A simple tool for generating Guids on the fly</Description>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" pack="true" PackagePath="/"/>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="TextCopy" Version="6.2.1" />

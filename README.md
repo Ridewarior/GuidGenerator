@@ -1,14 +1,23 @@
-# GuidGenerator
+# SimpleGuidGenerator
+
+## Prerequisites
+- Install the .Net CLI by installing the latest [.Net SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk)
+
+## Linux
+- [xsel](https://github.com/kfish/xsel) is required to access the system clipboard
+- Run `sudo apt install xsel` to install on Debian distros
 
 ## Installation
-- After pulling the repo run `dotnet pack` in a terminal or visual studio
-- Globally install the tool from the project folder `dotnet tool install -g --add-source .\nupkg\ GuidGenerator`
+- Run the following command in your terminal `dotnet tool install -g SimpleGuidGenerator` to install the tool from nuget.org
+
+## Local Installation
+- Download the latest nuget package from [releases](https://github.com/Ridewarior/GuidGenerator/releases)
+- Run `dotnet tool install -g --add-source <PATH-TO-YOUR-DIRECTORY> SimpleGuidGenerator`
 
 ## Usage
 - Run command `genguid` anywhere in a terminal to generate a new GUID that will be copied to your clipboard
 
-![image](https://github.com/Ridewarior/GuidGenerator/assets/50306165/1dabc115-7fc3-44ad-9e36-d2f717cb974c)
-
+![genguid-demo](https://github.com/user-attachments/assets/a0d9ee83-34fc-48ab-b2f3-77acefd244f3)
 
 ## Uninstall
-- `dotnet tool uninstall GuidGenerator -g`
+- `dotnet tool uninstall SimpleGuidGenerator -g`
